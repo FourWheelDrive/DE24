@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transition.css">
+    <link rel="stylesheet" href="landing.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="onload()">
+    <div id="terminal">
+        <pre><p id="terminal-header">Epsilon Pegasi Project Terminal
+Copyright (C) Jeffery Ma 2024
+
+Visit me! <a href="https://fourwheeldrive.github.io/" target="_blank">https://fourwheeldrive.github.io/</a>
+
+Type '.help' for a list of commands.
+NOTE: You need a Lab Coat, Gloves, and Goggles to initialize this program.
+
+</p></pre>
+        <!--When an input is entered here, append it to the content in #terminal-header, clear this, and write a new input line:-->
+        <textarea id="terminal-inputLine">EP C:\Users\deof> </textarea>
+    </div>
+
+    <!--Transition with some bubbles for these two.-->
+    <div id="landingPage"></div>
+    <div id="landingPageBanner"></div>
+    <!--discoverE logo in white.-->
+    <img class="logoImg" id="logoText" src="res/text.png">
+    <img class="logoImg" id="logoGear" src="res/gear.png">
+    <img class="logoImg" id="logoE" src="res/e.png">
+</body>

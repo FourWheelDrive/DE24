@@ -1,0 +1,124 @@
+/*LANDING PAGE SLIDE TRANSITIONS*/
+#landingPage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+
+    background-color: #175c17;
+    z-index: 10;
+}
+
+#landingPageBanner {
+    position: absolute;
+    width: 20%;
+    height: 150%;
+    transform: rotate(-20deg);
+
+    top: 100%;
+    left: 100%;
+
+    background-color: #eddc1a;
+    z-index: 11;
+}
+
+.landingPageSlide {
+    animation: 1s landingPageSlide linear forwards;
+}
+
+.bannerSlide {
+    animation: 0.6s bannerSlide linear forwards;
+}
+
+@keyframes landingPageSlide {
+    from {
+        top: 100%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    to {
+        top: 0%;
+    }
+}
+
+@keyframes bannerSlide {
+    from {
+        top: 100%;
+        left: 3%;
+    }
+
+    to {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+/*LOGO TRANSITIONS*/
+.logoImg {
+    position: absolute;
+    z-index: 20;
+
+    height: 15%;
+    top: 45%;
+    left: 105%;
+}
+
+#logoE {
+    z-index: 21;
+}
+
+/*transition classes*/
+.logoTextSlide {
+    animation: 1s textSlide linear forwards;
+}
+
+.logoGearSlide {
+    animation: 2s gearSlide linear forwards;
+}
+
+.logoESlide {
+    animation: 1s eSlide linear forwards;
+}
+
+@keyframes textSlide {
+    from {
+        left: 105%;
+    }
+
+    to {
+        left: 20%;
+    }
+}
+
+/*Same as eslide, but will have an additional element after 50% that spins.*/
+@keyframes gearSlide {
+    from {
+        left: 105%;
+        transform: none;
+    }
+    50%{
+        left: 48%;
+        transform: none;
+    }
+    60%{
+        left: 48%;
+        transform: none;
+    }
+    to{
+        transform: rotate(180deg);
+        left: 48%;
+    }
+}
+
+@keyframes eSlide {
+    from {
+        left: 105%;
+    }
+
+    to {
+        left: 48%;
+    }
+}

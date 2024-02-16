@@ -1,0 +1,22 @@
+/*.INIT TRANSITIONS*/
+.bubbles{
+    height: 50px;
+    width: 50px;
+    border-radius: 1px;
+    background-color: #175c17;
+    
+    position: absolute;
+    animation: 2s slideUp linear;
+}
+
+@keyframes slideUp {
+    from{
+        top: 150%;
+    }
+    50% {
+        top: 45%;
+    }
+    to {
+        top: -50%;
+    }
+}

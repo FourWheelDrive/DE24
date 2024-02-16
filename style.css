@@ -1,0 +1,64 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    height: 100%;
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    position: relative;
+}
+
+p {
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    color: white;
+}
+pre{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+#terminal{
+    position: relative;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+#terminal-header{
+    margin: 0;
+    padding: 0;
+}
+/*Need to make fonts match, and then also make large.*/
+#terminal-inputLine{
+    background-color: black;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+    height: 30%;
+    padding: 0;
+
+    overflow-y: hidden;
+
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+}
