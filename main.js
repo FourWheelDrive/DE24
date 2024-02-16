@@ -69,6 +69,7 @@ class cmdHandler {
                 break;
             case ".inv":
                 this.cmdOut(`Inventory: [${this.inventory[0], this.inventory[1], this.inventory[2]}]`);
+                break;
             case ".init":
                 //Checks?
                 this.initBegin();
