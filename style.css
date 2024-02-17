@@ -62,3 +62,16 @@ a:hover{
     font-family: "Roboto Mono";
     font-size: 1rem;
 }
+
+/*email button.*/
+#navMenu__gmail{
+    border: 0;
+    background-color: transparent;
+
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    color: white;
+}
+#navMenu__gmail:hover{
+    text-decoration: underline;
+}

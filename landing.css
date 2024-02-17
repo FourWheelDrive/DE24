@@ -122,3 +122,25 @@
         left: 48%;
     }
 }
+
+/*Landing page text.*/
+#landingPageText{
+    position: absolute;
+    left: 110%;
+    top: 70%;
+    z-index: 23;
+
+    width: auto;
+}
+.landingTextSlide{
+    animation: 1s captionSlide linear forwards;
+}
+
+@keyframes captionSlide{
+    from{
+        left: 110%;
+    }
+    to{
+        left: 20%;
+    }
+}

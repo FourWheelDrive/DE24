@@ -68,12 +68,19 @@ class cmdHandler {
 
                 break;
             case ".inv":
-                this.cmdOut(`Inventory: [${this.inventory[0], this.inventory[1], this.inventory[2]}]`);
+                this.cmdOut(`Inventory: [${this.inventory[0]}, ${this.inventory[1]}, ${this.inventory[2]}]`);
                 break;
             case ".init":
                 //Checks?
-                this.initBegin();
-                return; //Exit this phase of the program.
+                if(this.inventory.includes("lab coat") && this.inventory.includes("goggles") && this.inventory.includes("gloves")){
+                    this.initBegin();
+                    return; //exit this phase.
+                } else {
+                    this.cmdOut("Error: You are missing something to initialize this program.");
+                    this.cmdOut("Run '.inv' to check the inventory.")
+                    this.cmdOut("Run '.get lab coat' to get a lab coat.")
+                }
+                break;
             default:
                 this.cmdOut(`The term '${cmdStr[2]}' cannot be recognized as a command. Type '.help' for help.`);
                 break;
@@ -127,9 +134,10 @@ class cmdHandler {
         logoGearElem.classList.add("logoGearSlide");
         logoEElem.classList.add("logoESlide");
 
-        //Begin the sequence.
-        this.cmdOut("Hello World!");
-        this.cmdOut("Successfully initialized.");
+        await sleep(1000);
+        //Bring the text in.
+        let landingCaption = document.getElementById("landingPageText");
+        landingCaption.classList.add("landingTextSlide");
     }
 
     createBubble(body) {
