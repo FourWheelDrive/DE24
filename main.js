@@ -65,6 +65,8 @@ class cmdHandler {
                                 this.cmdOut("Got goggles!");
                             }
                             break;
+                        default:
+                            this.cmdOut("Error: Item not recognized. Try: 'lab coat', 'goggles', 'gloves'.");
                     }
                 }
 
