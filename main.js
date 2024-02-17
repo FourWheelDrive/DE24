@@ -36,7 +36,9 @@ class cmdHandler {
                 if (typeof cmdStr[3] === undefined) {
                     this.cmdOut("Error: No item provided.");
                 } else {
-                    switch (cmdStr[3]) {
+                    //to Lower everything.
+                    let item = cmdStr[3].toLowerCase();
+                    switch (item) {
                         case "lab coat":
                         case "lab":
                         case "lab_coat":
