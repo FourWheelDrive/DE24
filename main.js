@@ -34,7 +34,7 @@ class cmdHandler {
             case ".get":
                 //A nested SWITCH for item, and append to inventory.
                 if (typeof cmdStr[3] === undefined) {
-                    this.cmdOut("Error: No item provided.");
+                    this.cmdOut("ERROR: No item provided.");
                 } else {
                     //to Lower everything.
                     let item = cmdStr[3].toLowerCase();
@@ -66,7 +66,7 @@ class cmdHandler {
                             }
                             break;
                         default:
-                            this.cmdOut("Error: Item not recognized. Try: 'lab coat', 'goggles', 'gloves'.");
+                            this.cmdOut("ERROR: Item not recognized. Try: 'lab coat', 'goggles', 'gloves'.");
                     }
                 }
 
@@ -80,7 +80,7 @@ class cmdHandler {
                     this.initBegin();
                     return; //exit this phase.
                 } else {
-                    this.cmdOut("Error: You are missing something to initialize this program.");
+                    this.cmdOut("ERROR: You are missing something to initialize this program. Required: Lab Coat, Gloves, Goggles.");
                     this.cmdOut("Run '.inv' to check the inventory.")
                     this.cmdOut("Run '.get lab coat' to get a lab coat.")
                 }
