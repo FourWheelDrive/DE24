@@ -75,3 +75,10 @@ a:hover{
 #navMenu__gmail:hover{
     text-decoration: underline;
 }
+
+#spanRed{
+    color: red;
+}
+#spanYellow{
+    color: yellow;
+}
